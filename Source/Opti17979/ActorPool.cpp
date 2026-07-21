@@ -55,7 +55,7 @@ AActor* UActorPool::GetActorFromPool()
 {
 	AActor* actorFound = FindFirstActor();
 
-	if (actorFound) { UActorUtilities::ToggleActorHidden(actorFound, false); }
+	if (actorFound) { UActorUtilities::ToggleActorHidden(actorFound, false); return actorFound; }
 	return nullptr;
 }
 
