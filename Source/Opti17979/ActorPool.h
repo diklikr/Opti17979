@@ -8,11 +8,11 @@
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class TWINSTICKSHOOTER_API UActorPool : public UActorComponent
+class OPTI17979_API UActorPool : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
 	// Sets default values for this component's properties
 	UActorPool();
 
@@ -34,8 +34,8 @@ protected:
 
 	AActor* FindFirstActor(); //first available actor
 
-public:	
-	
+public:
+
 	UFUNCTION(BlueprintCallable)
 	AActor* GetActorFromPool();
 };

@@ -17,7 +17,7 @@ UActorPool::UActorPool()
 void UActorPool::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 	if (!actorTemplate || defaultSize <= 0) { return; }
 
 	for (int i = 0; i < defaultSize; i++) {
@@ -58,4 +58,3 @@ AActor* UActorPool::GetActorFromPool()
 	if (actorFound) { UActorUtilities::ToggleActorHidden(actorFound, false); return actorFound; }
 	return nullptr;
 }
-

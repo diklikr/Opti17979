@@ -10,11 +10,11 @@
  * 
  */
 UCLASS()
-class TWINSTICKSHOOTER_API UActorUtilities : public UBlueprintFunctionLibrary
+class OPTI17979_API UActorUtilities : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-	
-public: 
+
+public:
 	UFUNCTION(BlueprintCallable)
 	static void ToggleActorHidden(AActor* actor, bool hidden);
 };
