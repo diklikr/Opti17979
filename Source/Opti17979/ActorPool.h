@@ -36,6 +36,5 @@ protected:
 
 public:
 
-	UFUNCTION(BlueprintCallable)
-	AActor* GetActorFromPool();
+	UFUNCTION(BlueprintCallable) AActor* GetActorFromPool();
 };
